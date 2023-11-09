@@ -51,6 +51,9 @@ public class code {
     }
 
     public static void fiboseries(int N, int x, int y) {
+        if(N==0){
+            return;
+        }
         System.out.print(x + " "); 
         fiboseries(N - 1, y, x + y);
     }
@@ -160,7 +163,8 @@ public class code {
         System.out.println("\n");
         commonfactors(36, 48, 2);
         System.out.println("\n");
-        //fiboseries(N, -1, 1);
+        fiboseries(N, -1, 1);
+        System.out.println("\n");
         System.out.println("Number of digits: " + countdigits(N));
         System.out.println("\n");
         System.out.println("Largest digit: " + largest(N, 0));
